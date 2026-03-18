@@ -1,4 +1,5 @@
 # backend/app/db/models/user.py
+from __future__ import annotations
 import uuid
 from sqlalchemy import String, Boolean, ForeignKey, DateTime
 from sqlalchemy.orm import Mapped, mapped_column, relationship
