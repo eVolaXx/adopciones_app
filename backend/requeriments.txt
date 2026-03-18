@@ -1,1 +1,13 @@
-# Dependencias Python (Django, DRF, etc)
+# Dependencias Python
+
+fastapi==0.111.0
+uvicorn[standard]==0.30.0
+sqlalchemy==2.0.30
+alembic==1.13.1
+asyncpg==0.29.0          # driver async para PostgreSQL
+pydantic==2.7.0
+pydantic-settings==2.3.0  # para leer el .env
+passlib[bcrypt]==1.7.4    # hashing de contraseñas
+python-jose[cryptography]==3.3.0  # JWT
+python-multipart==0.0.9   # para form data en login
+redis==5.0.4
