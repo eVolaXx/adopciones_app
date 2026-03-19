@@ -203,7 +203,7 @@ La suite usa rollback automático por test — cada test trabaja en una transacc
 
 ## 📋 Fases de desarrollo
 
-- [x] **Fase 1** — Modelos de BD, autenticación JWT, roles
+- [ ] **Fase 1** — Modelos de BD, autenticación JWT, roles
 - [ ] **Fase 2** — API REST completa (animales, adopciones, fotos)
 - [ ] **Fase 3** — WebSockets y notificaciones en tiempo real
 - [ ] **Fase 4** — Frontend React
