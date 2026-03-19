@@ -1,8 +1,9 @@
 # backend/app/db/models/notification.py
 import uuid
 from datetime import datetime, timezone
+from typing import TYPE_CHECKING
 from sqlalchemy import String, Boolean, Text, DateTime, ForeignKey, Index
-from sqlalchemy.orm import Mapped, mapped_column, relationship, TYPE_CHECKING
+from sqlalchemy.orm import Mapped, mapped_column, relationship
 from app.db.base import Base
 
 if TYPE_CHECKING:

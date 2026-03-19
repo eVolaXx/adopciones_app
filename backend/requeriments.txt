@@ -5,6 +5,7 @@ uvicorn[standard]==0.30.0
 sqlalchemy==2.0.30
 alembic==1.13.1
 asyncpg==0.29.0          # driver async para PostgreSQL
+greenlet==3.3.2         # requerido por SQLAlchemy async (para greenlet_spawn)
 pydantic==2.7.0
 pydantic-settings==2.3.0  # para leer el .env
 passlib[bcrypt]==1.7.4    # hashing de contraseñas

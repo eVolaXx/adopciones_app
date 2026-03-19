@@ -3,7 +3,7 @@ import uuid
 from datetime import datetime, timezone
 from sqlalchemy import String, Boolean, Text, DateTime
 from sqlalchemy.orm import Mapped, mapped_column, relationship
-from app.db.crud.base import Base
+from app.db.base import Base
 from app.db.models.user import User
 from app.db.models.animal import Animal
 

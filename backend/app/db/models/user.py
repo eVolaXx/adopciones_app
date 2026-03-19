@@ -4,10 +4,7 @@ import uuid
 from sqlalchemy import String, Boolean, ForeignKey, DateTime
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 from datetime import datetime, timezone
-from backend.app.db.base import Base
-from app.db.models.shelter import Shelter
-from app.db.models.adoption import Adoption
-from app.db.models.notification import Notification
+from app.db.base import Base
 
 
 

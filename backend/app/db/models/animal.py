@@ -2,14 +2,23 @@
 import uuid
 from datetime import datetime, timezone
 from sqlalchemy import (
-    String, Boolean, Text, DateTime,
-    Integer, ForeignKey, Index, CheckConstraint
+    String,
+    Boolean,
+    Text,
+    DateTime,
+    Integer,
+    ForeignKey,
+    Index,
+    CheckConstraint,
 )
 from sqlalchemy.dialects.postgresql import JSONB
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 from app.db.base import Base
-from app.db.models.shelter import Shelter
-from app.db.models.adoption import Adoption
+from typing import TYPE_CHECKING
+
+if TYPE_CHECKING:
+    from app.db.models.shelter import Shelter
+    from app.db.models.adoption import Adoption
 
 
 class Animal(Base):
@@ -50,7 +59,7 @@ class Animal(Base):
         # Valores: "pequeño" | "mediano" | "grande"
     )
     sex: Mapped[str] = mapped_column(
-        String(10),
+        String(20),
         nullable=False,
         # Valores: "macho" | "hembra"
     )
